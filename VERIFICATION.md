@@ -25,7 +25,9 @@ Notes on expected small differences:
 
 - Two successful refreshes on 2026-11-18 (07:22 and 07:24 UTC), 7/7 series updated each time: `evidence/run_log_1.txt`, `evidence/run_log_2.txt`, and the rows in `docs/refresh_log.csv`. Values did not change between the runs because no source released new data in between.
 - Dashboard after the refresh: `evidence/dashboard_screenshot.png` (header shows "Last successful refresh"; each chart shows its own latest observation date).
-- Scheduled refresh on GitHub Actions: (add a screenshot of the green "Refresh dashboard" run after you set up the repository)
+- Refresh on GitHub Actions: the "Refresh dashboard" workflow (`.github/workflows/refresh.yml`) in https://github.com/SalmonWithWasabi/japan-dashboard completed successfully (run #1, triggered manually with "Run workflow", branch `main`, 37 s, green check): `evidence/github_actions_run.png`. The workflow also runs on a daily schedule (01:17 UTC).
+
+  ![Green Refresh dashboard run on GitHub Actions](evidence/github_actions_run.png)
 
 ## 3. Issues found while building, and fixes
 
